@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Start your development with JohnDoe landing page." />
+  <meta name="author" content="Devcrud" />
+  <title>Ashok Protfolio</title>
+  <!-- font icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Bootstrap + JohnDoe main styles -->
+  <link rel="stylesheet" href="assets/css/Ashok.css" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" id="home">
+  <header class="header">
+    <div class="container">
+      <ul class="social-icons pt-3">
+        <li class="social-item">
+          <a class="social-link text-light" href="https://www.linkedin.com/in/ashok-b-13677a236/"><i
+              class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link text-light" href="mailto:ashokbala1212@gmail.com"><i class="ti-email"
+              aria-hidden="true"></i></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link text-light" href="https://github.com/Ashokbala1627"><i class="ti-github"
+              aria-hidden="true"></i></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link text-light" href="tel:9597908175"><i class="ti-mobile"></i></a>
+        </li>
+      </ul>
+      <div class="header-content">
+        <h4 class="header-subtitle">Hello, I am</h4>
+        <h1 class="header-title">Ashok B</h1>
+        <h6 class="header-mono">Front-end Developer(React JS) | Graphic Designer</h6>
+        <button class="btn btn-primary btn-rounded" onclick="viewResume()">
+          <i class="ti-printer pr-2"></i>Print Resume
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+    <div class="container">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav brand">
+          <img src="assets/imgs/1aa.jpg" alt="" class="brand-img" />
+          <li class="brand-txt">
+            <h5 class="brand-title">Ashok</h5>
+            <div class="brand-subtitle">Front-end Developer | Graphic Designer </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div id="about" class="row about-section">
+      <div class="col-lg-4 about-card">
+        <h3 class="font-weight-light">About me</h3>
+        <span class="line mb-5"></span>
+        <h5 class="mb-3">
+          A Web Developer | Graphic Designer
+        </h5>
+        <p class="mt-20">
+          "I have a passion for design and development, with over three years of experience in graphic design.
+          Additionally, I bring around two years of experience in non-IT fields. Recently, I transitioned my career into
+          web development, leveraging my expertise in the MERN (MongoDB, Express.js, React.js, Node.js) technology
+          stack."
+        </p>
+        <button class="btn btn-outline-danger" onclick="downloadResume()">
+          <i class="icon-down-circled2"></i>Download My CV
+        </button>
+      </div>
+      <div class="col-lg-4 about-card">
+        <h3 class="font-weight-light">Personal Info</h3>
+        <span class="line mb-5"></span>
+        <ul class="mt40 info list-unstyled">
+          <li><span>Birthdate</span> : 12/12/1997</li>
+          <li><span>Email</span> : ashokbala1212@gmail.com</li>
+          <li><span>Phone</span> : +91 9597908175</li>
+          <li><span>Skype</span> : Ashok B</li>
+          <li><span>Address</span> : Boyampalayam,Tirupur</li>
+        </ul>
+        <ul class="social-icons pt-3">
+          <li class="social-item">
+            <a class="social-link" href="https://www.linkedin.com/in/ashok-b-13677a236/"><i
+                class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="mailto:ashokbala1212@gmail.com"><i class="ti-email" aria-hidden="true"></i></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://github.com/Ashokbala1627"><i class="ti-github"
+                aria-hidden="true"></i></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="tel:9597908175"><i class="ti-mobile"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 about-card">
+        <h3 class="font-weight-light">My Expertise</h3>
+        <span class="line mb-5"></span>
+        <div class="row">
+          <div class="col-1 text-danger pt-1">
+            <i class="ti-widget icon-lg"></i>
+          </div>
+          <div class="col-10 ml-auto mr-3">
+            <h6>Graphic Designer</h6>
+            <p class="mt-20" id="introText1">
+              A graphic designer is a creative professional who uses visual elements to communicate ideas, messages, or
+              information.<span id="moreContent1" style="display: none;">They combine typography, images, and other
+                visual elements to create designs for various mediums such as print, digital media, advertising,
+                branding, and more. Graphic designers often work with clients to understand their needs and create
+                designs that effectively convey the desired message or concept. They primarily utilize software tools
+                such as Adobe Photoshop and Illustrator.</span>
+            </p>
+            <a href="javascript:void(0);" onclick="toggleReadMore('introText1', 'moreContent1', 'readMoreLink1')">Read
+              More</a>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1 text-danger pt-1">
+            <i class="ti-paint-bucket icon-lg"></i>
+          </div>
+          <div class="col-10 ml-auto mr-3">
+            <h6>Web Development</h6>
+            <p class="mt-20" id="introText2">
+              During my recent one-month internship, I had the opportunity to apply my skills and knowledge in a
+              real-world setting, gaining valuable hands-on experience. Additionally, <span id="moreContent2"
+                style="display: none;">I successfully completed a certificate program in MERN (MongoDB, Express.js,
+                React.js, Node.js) technology. Throughout the program, I worked on a series of projects that showcased
+                my proficiency in building full-stack web applications. These experiences have not only enhanced my
+                technical skills but also deepened my understanding of the software development process and strengthened
+                my problem-solving abilities. I am eager to continue expanding my knowledge and skills in the field of
+                web development, and I am excited about the opportunities that lie ahead.</span>
+            </p>
+            <a href="javascript:void(0);" onclick="toggleReadMore('introText2', 'moreContent2', 'readMoreLink2')">Read
+              More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+      <div class="container">
+        <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="mt-2">
+                  <h4>Expertise</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="title text-danger">2018-2019 and 2022-2023</h6>
+                <P>Graphic Designer
+                  Designed engaging marketing materials, including brochures, posters, and digital advertisements.
+                  Ensured brand consistency and adherence to corporate design guidelines.
+                </P>
+                <hr>
+                <h6 class="title text-danger">2020 - 2021</h6>
+                <P>
+                  Process Executive
+                  Processed State taxlien, County taxlien, and Federal taxlien documents.
+                  Conducted APN research based on property documents, ensuring accuracy.
+                </P>
+                <hr>
+                <h6 class="title text-danger">2024</h6>
+                <P> MERN Stack Developer - internship
+                  Zomato inspired project using MERN Technology
+                  Frontend Development: React js
+                  Backend Development: Node.js, Express.js
+                  DataBase: MongoDB. <br>
+                  <span style="font-weight: 600;" class="text-danger">Project Link:</span><a href="https://eat-tasty-frontend.vercel.app/"> Click here</a>
+                </P>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="mt-2">
+                  <h4>Education</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="title text-danger">2024</h6>
+                <P>MERN Stack Developer</P>
+                <hr>
+                <h6 class="title text-danger">2020</h6>
+                <P>Graphic Designer</P>
+                <hr>
+                <h6 class="title text-danger">2015 - 2018</h6>
+                <P>Bsc Computer Science</P>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="pull-left">
+                  <h4 class="mt-2">Projects</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body pb-2">
+                <h6>Time to wish javascript - <a
+                    href="https://ashokbala1627.github.io/JavaScript-Basic-Project/">Link</a></h6>
+                <br>
+                <h6>Travel Landing Page pure Html & Css- <a href="https://ashokbala1627.github.io/Travel/">Link</a></h6>
+                <br>
+                <h6>My-Music by using React js - <a href="https://my-music-app-ten.vercel.app/">Link</a>
+                </h6>
+                <br>
+                <h6>Tata-website (Html & Css) - <a href="https://ashokbala1627.github.io/Tata-website/">Link</a></h6>
+                <br>
+                <h6>Prime-video (Html,Css & Js(Basic)) - <a
+                    href="https://ashokbala1627.github.io/Prime-video-website/">Link</a></h6>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <div class="pull-left">
+                  <h4 class="mt-2">Languages</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body pb-2">
+                <h6>Tamil</h6>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>English</h6>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <footer class="footer py-3">
+    <div class="container">
+      <p class="small mb-0 text-light">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Created With <i class="ti-heart text-danger"></i> By <span class="text-danger"
+          title="Bootstrap 4 Themes and Dashboards">Youdecide</span>
+        >
+      </p>
+    </div>
+  </footer>
+
+  <!-- core  -->
+  <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+  <!-- bootstrap 3 affix -->
+  <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+  <!-- Isotope  -->
+  <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+  <!-- Google mpas -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+  <!-- JohnDoe js -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
